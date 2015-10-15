@@ -29,14 +29,14 @@ class TreeAndMenu {
 
 		// Fancytree script and styles
 		$wgResourceModules['ext.fancytree']['localBasePath'] = __DIR__ . '/fancytree';
-		$wgResourceModules['ext.fancytree']['remoteExtPath'] = "$path/fancytree";
+		$wgResourceModules['ext.fancytree']['remoteExtPath'] = "TreeAndMenu/fancytree";
 		$wgOut->addModules( 'ext.fancytree' );
 		$wgOut->addStyle( "$path/fancytree/fancytree.css" );
 		$wgOut->addJsConfigVars( 'fancytree_path', "$path/fancytree" );
 
 		// Suckerfish menu script and styles
 		$wgResourceModules['ext.suckerfish']['localBasePath'] = __DIR__ . '/suckerfish';
-		$wgResourceModules['ext.suckerfish']['remoteExtPath'] = "$path/suckerfish";
+		$wgResourceModules['ext.suckerfish']['remoteExtPath'] = "TreeAndMenu/suckerfish";
 		$wgOut->addModules( 'ext.suckerfish' );
 		$wgOut->addStyle( "$path/suckerfish/suckerfish.css" );
 	}
